@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**************************************/
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+  }
+
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.NavigationBar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*Orientez spre dreapta*/
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+/*scot si bullets*/
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+/*NavigationBar pe o linie. Distanta intre de 20px*/
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+/*scot si evidentierea textului si schimb culoarea referintelor*/
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+a:hover{
+    background-color: blanchedalmond;
+}
+
+p {
+    color: #555;
+}
+/**************************************/
+/*un rand de produse*/
+.row {  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+
+
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    /*top and bottom*/
+    margin: 25px 0;
+}
+
+/*butoanele mele*/
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    /*left and right*/
+    padding: 8px 30px;
+  
+    /*top and bottom*/
+    margin: 30px 0;
+    /*rotunjire*/
+    border-radius: 30px;
+    transition: background 0.5s;
+    /*hover efect*/
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+.header {
+    background: radial-gradient(#fff, #039114);
+}
+/***************************************/
+
+.header .row {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+    /*top bottom*/
+}
+
+.col-3 {
+    flex-basis: 30%;
+    /*fiecare poza va ocupa 30%*/
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    /*pt potrivire*/
+    width: 100%;
+}
+
+/*de baza pt pagina */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    /*4coloane*/
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    /*Featured Products*/
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    /*paragraf-preturile*/
+    font-size: 14px;
+}
+
+.rating .fa {
+    color: #fff523;
+}
+
+.col-4:hover {
+    /*imaginile se vor misca*/
+    transform: translateY(-5px);
+}
+/*----------offer---------------*/
+
+.offer {
+    background: radial-gradient(#fff, #039114);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+    /*reduc imaginea*/
+}
+
+small {
+    color: #555;
+}
+/*testimonial*/
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.fa .fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/*brands*/
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+/*---------footer---------*/
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-4,
+.footer-col-3 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+    margin-left: 20px;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 {
+    width: 180px;
+    margin-bottom: 20px
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.learn {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*-----all products page-------------*/
+
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 1px solid #ff523b;
+}
+/*sa imi ramana marginile colorate indiferent de alegere*/
+
+select:focus {
+    outline: none;
+}
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    background: #ff523b;
+    color: #fff;
+    /*textul alb*/
+}
+
+.single-product {
+    margin-top: 80px;
+    
+}
+
+.single-product .col-2 img {
+    padding: 0;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus {
+    outline: none;
+}
+
+.single-product {
+    text-align: left;
+}
+
+.single-product .col-2 {
+    padding: 20px 0;
+}
+
+.single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+}
+/*---------------cart items---------*/
+
+.cart-page {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    /*text alb*/
+    background: #ff523b;
+    /*background*/
+    font-weight: normal;
+}
+/* td {
+    padding: 10px 5px;
+} */
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    /*remove*/
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img {
+    /*dimensiuni imagine cart*/
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+    /*latime*/
+}
+
+td:last-child {
+    text-align: right;
+}
+/*------account page-----*/
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #039114);
+    /*gradient*/
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /*ascund fereastra in spate*/
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+    /*incetinesc schimbarea ferestrei Login/Register*/
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+    outline: none;
+    /*sa nu mai apara outline-ul cand apas*/
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegisterForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+/*-------- media query for menu ----------*/
+
+@media only screen and (max-width:800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        /*tin meniul inchis*/
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+/*media query for less than screen size*/
+
+@media only screen and (max-width:600px) {
+    /*aliniez centrul in mijloc cand micsorez fereastra*/
+    .row {
+        text-align: center;
+    }
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+    .single-product .row {
+        text-align: left;
+    }
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p {
+        /*ascund denumire obiect cand micsorez*/
+        display: none;
+    }
+}
+/*----------------------Admin Panel----------------------*/
+/*     
+* {
+    margin: 0;
+    padding: 0;
+} */
+/*Main Data Table */
+
+.mainTable {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#table {
+    margin: 5px auto;
+}
+
+table tr:not(:first-child) {
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+table tr:not(:first-child):hover {
+    background-color: #ddd;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+/*Data Update Button */
+
+.updateBtn {
+    text-align: center;
+}
+
+.updateBtn button {
+    background-color: red;
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.updateBtn button:hover {
+    background: lightgray;
+    color: black;
+    transition: .5s;
+}
+/*Data Update Table ADMIN PANEL*/
+
+.editTable {
+    display: none;
+    padding-top: 20px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.insertTable {
+    display: none;
+    padding-top: 20px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.editRowBtn {
+    background-color: #0DC143;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.editRowBtn:hover {
+    background-color: lightgray;
+    color: black;
+    transition: .5s;
+}
+
